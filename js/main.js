@@ -2,7 +2,11 @@
     "use strict";
 
     // Insert copyright year
-    $(".year").val(new Date().getFullYear())
+    $(document).ready(function () {
+        var dt = new Date();
+        $(".year").text(new Date().getFullYear())
+        
+    })
     
     // Dropdown on mouse hover
     $(document).ready(function () {
